@@ -9,4 +9,4 @@ public class DbContext : Microsoft.EntityFrameworkCore.DbContext
         }
 
         public DbSet<Package> Package { get; set; }
-    }
+}
