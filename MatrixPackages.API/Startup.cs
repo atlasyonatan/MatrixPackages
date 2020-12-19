@@ -33,6 +33,7 @@ namespace MatrixPackages.API
                 app.UseDeveloperExceptionPage();
             }
 
+            // Sets up the db according to the models of the DbContext
             db.Database.EnsureCreated();
 
             app.UseHttpsRedirection();
