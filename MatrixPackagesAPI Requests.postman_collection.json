@@ -1,0 +1,116 @@
+{
+	"info": {
+		"_postman_id": "f365f988-7eb4-48df-a48b-23aee3d0fd7b",
+		"name": "MatrixPackagesAPI Requests",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "localhost:60160/Packages",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"TrackingNumber\": \"atlas3\",\r\n  \"ServiceTypeCode\": \"5\",\r\n  \"StatusCode\": 10,\r\n  \"OrderReference\": \"ILIP2327137600207862\",\r\n  \"ShipmentDate\": \"2020-03-25T05:30:26\",\r\n  \"ShipmentType\": 10,\r\n  \"ParcelContent\": [\r\n    {\r\n      \"ItemDescription\": \"FEMALE WOVEN VISCOSE BLOUSE  REF:211632\",\r\n      \"ItemQuantity\": 1,\r\n      \"ItemValue\": 69\r\n    },\r\n    {\r\n      \"ItemDescription\": \"FEMALE WOVEN VISCOSE   BLOUSE  REF:977979\",\r\n      \"ItemQuantity\": 1,\r\n      \"ItemValue\": 76\r\n    }\r\n  ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:60160/Packages",
+					"host": [
+						"localhost"
+					],
+					"port": "60160",
+					"path": [
+						"Packages"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:60160/Packages/atlas",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:60160/Packages/atlas",
+					"host": [
+						"localhost"
+					],
+					"port": "60160",
+					"path": [
+						"Packages",
+						"atlas"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:60160/Packages?trackingNumbers=atlas&trackingNumbers=atlas3",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "667",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:60160/Packages?trackingNumbers=atlas&trackingNumbers=atlas3",
+					"host": [
+						"localhost"
+					],
+					"port": "60160",
+					"path": [
+						"Packages"
+					],
+					"query": [
+						{
+							"key": "trackingNumbers",
+							"value": "atlas"
+						},
+						{
+							"key": "trackingNumbers",
+							"value": "atlas3"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:60160/Packages?trackingNumbers=bla",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:60160/Packages?trackingNumbers=bla",
+					"host": [
+						"localhost"
+					],
+					"port": "60160",
+					"path": [
+						"Packages"
+					],
+					"query": [
+						{
+							"key": "trackingNumbers",
+							"value": "bla"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
