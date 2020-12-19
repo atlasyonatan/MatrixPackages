@@ -8,13 +8,12 @@ namespace MatrixPackages.Models
         [Key]
         public int Id { get; set; }
 
-        [JsonProperty(Required = Required.AllowNull)]
         public string ItemDescription { get; set; }
 
-        [JsonProperty(Required = Required.Always)]
+        [Required]
         public int ItemQuantity { get; set; }
 
-        [JsonProperty(Required = Required.Always)]
+        [Required]
         public int ItemValue { get; set; }
     }
 }

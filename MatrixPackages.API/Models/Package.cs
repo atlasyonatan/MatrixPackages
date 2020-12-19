@@ -8,25 +8,25 @@ namespace MatrixPackages.Models
     public class Package
     {
         [Key]
-        [JsonProperty(Required = Required.Always)]
+        [Required(AllowEmptyStrings = false)]
         public string TrackingNumber { get; set; }
 
-        [JsonProperty(Required = Required.Always)]
+        [Required]
         public int ServiceTypeCode { get; set; }
 
-        [JsonProperty(Required = Required.Always)]
+        [Required]
         public int StatusCode { get; set; }
 
-        [JsonProperty(Required = Required.Always)]
+        [Required(AllowEmptyStrings = false)]
         public string OrderReference { get; set; }
 
-        [JsonProperty(Required = Required.Always)]
+        [Required]
         public DateTime ShipmentDate { get; set; }
 
-        [JsonProperty(Required = Required.Always)]
+        [Required]
         public int ShipmentType { get; set; }
 
-        [JsonProperty(Required = Required.Always)]
+        [Required]
         public List<Item> ParcelContent { get; set; }
     }
 }

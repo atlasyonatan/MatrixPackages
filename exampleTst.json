@@ -1,0 +1,27 @@
+
+	"Items": [
+		  {
+			"TrackingNumber": "LS111309613CH",
+			"ServiceTypeCode": 30,
+			"StatusCode": 10,
+			"OrderReference": "ILIP2327137600207862",
+			"ShipmentDate": "2020-03-25T05:30:26",
+			"ShipmentType": 10,
+			"ParcelContent": [
+				{
+				
+					"ItemDescription": "FEMALE WOVEN VISCOSE BLOUSE  REF:211632",
+					"ItemQuantity": 1,
+					"ItemValue": 69,
+					
+				},
+				{
+					"ItemDescription": "FEMALE WOVEN VISCOSE   BLOUSE  REF:977979",
+					"ItemQuantity": 1,
+					"ItemValue": 76,
+					
+				}
+			],
+			
+		}
+	]
